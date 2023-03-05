@@ -1,0 +1,160 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 0px;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(116, 116, 116, 0.5) 100%); */
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.756);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* navbar styles */
+.navbar {
+    display: flex;
+    font-size: 1.1rem;
+
+}
+
+.navbar-section {
+    display: flex;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.208); */
+    padding: 10px 15px;
+    align-items: center;
+    
+}
+
+.logo {
+    flex-basis: 20%;
+}
+.width75{
+    flex-basis: 75vw;
+    display: flex;
+}
+
+.signature {
+    height: 4rem;
+}
+
+@media(min-width:768px) {
+
+    .navmenu {
+        flex-grow: 1;
+        display: flex !important;
+        /* border-right: 1px solid rgba(255, 255, 255, 0.208); */
+        justify-content: end;
+    }
+
+    .social-icons{
+        flex-grow: 1;
+        display: flex !important;
+        border-right: none;
+        
+    }
+
+}
+
+.nav-link {
+    margin: 0px 13px;
+}
+
+.nav-link>span{
+    font-size: 8px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;   
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+.dropdown-btn{
+    cursor: pointer;
+}
+.dropdown-item{
+    display: block;
+    color: black;
+    margin: 10px;
+}
+.dropdown-item:hover{
+    color: grey;
+    
+}
+
+.hamburg {
+    display: none;
+}
+
+@media(max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.208);
+    }
+
+    .width75{
+        flex-direction: column;
+        display: flex;
+        flex-basis: auto;
+    }
+    .logo {
+        border: none;
+    }
+
+    .navmenu {
+        display: none;
+        border: none;
+    }
+
+    .hamburg-menu {
+        margin: 10px 0px;
+        display: block;
+    }
+
+    .social-icons {
+        justify-content: start;
+        padding: 10px 5px;
+        display: none;
+        border: none;
+        margin-bottom: 30px;
+    }
+
+
+    .hamburg {
+        position: absolute;
+        right: 13px;
+        top: 17px;
+        display: inline;
+        background: transparent;
+        border: none;
+        height: 30px;
+        width: 30px;
+        aspect-ratio: 1/1;
+        color: transparent;
+        text-shadow: 0 0 0 #2196f3;
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28225, 225, 225, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+
+    .hamburg:hover {
+        cursor: pointer;
+    }
+    .dropdown-menu{
+        margin-left: 70px;
+        transform: translateY(-10px);
+    }
+    .dropdown-item {
+        display: block;
+        position: relative;
+
+    }
+}
