@@ -118,9 +118,15 @@ div[data-status="active"]{
     .buttons{
         height: 50px;
     }
+    main{
+        flex-grow: 1;
+        height: 70vh;
+    }
+   
+}
+@media (max-width: 768px) {
     #people-img{
-        background-image: url('../images/People/p1.jpg');
-        background-repeat:no-repeat;
+
         background-size: contain;
         background-position: center;
     }
@@ -131,6 +137,7 @@ div[data-status="active"]{
         flex-grow: 1;
         height: auto;
     }
+    
 }
 .blr-btn>a{
     color: black;
